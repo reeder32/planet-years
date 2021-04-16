@@ -11,4 +11,7 @@ describe("Planet", () => {
   test("it should return the life expectency based on the age and male gender and conversion", () => {
     expect(planet.getLifeExpectencyForGender("male", 40)).toBe(30);
   });
+  test("it should return the life expectency based on the age and femal gender and conversion", () => {
+    expect(planet.getLifeExpectencyForGender("femmale", 40)).toBe(35);
+  });
 });
