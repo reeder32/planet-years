@@ -5,7 +5,9 @@ export default class Planet {
   convertToPlanetYears(age) {
     return age * this.conversionNumber;
   }
-  getLifeExpectencyForGender(gender, age) {
+  getLifeExpectencyForGender(gender) {}
+
+  getRemainingYearsForGenderAndAge(gender, age) {
     if (gender === "male") {
       return 70 - age * this.conversionNumber;
     } else {
