@@ -1,4 +1,4 @@
-import Mars from "../src/mars.js";
+import Mars from "../src/classes/mars";
 
 describe("Mars", () => {
   let mars;

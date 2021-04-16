@@ -1,4 +1,4 @@
-import Venus from "../src/venus.js";
+import Venus from "../src/classes/venus";
 
 describe("Venus", () => {
   let venus;

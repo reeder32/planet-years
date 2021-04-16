@@ -1,4 +1,4 @@
-import Planet from "../src/planet.js";
+import Planet from "../src/classes/planet";
 
 describe("Planet", () => {
   let planet;
@@ -19,5 +19,10 @@ describe("Planet", () => {
   });
   test("it should return the life expectency based on the age and femal gender and conversion", () => {
     expect(planet.getRemainingYearsForGenderAndAge("femmale", 40)).toBe(35);
+  });
+  test("it should return the life expectency based on the age and decline to answer gender and conversion", () => {
+    expect(
+      planet.getRemainingYearsForGenderAndAge("decline to answer", 40)
+    ).toBe(35);
   });
 });

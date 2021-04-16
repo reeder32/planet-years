@@ -1,4 +1,4 @@
-import Jupiter from "../src/jupiter";
+import Jupiter from "../src/classes/jupiter";
 
 describe("Jupiter", () => {
   let jupiter;

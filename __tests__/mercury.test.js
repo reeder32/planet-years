@@ -1,4 +1,4 @@
-import Mercury from "../src/mercury.js";
+import Mercury from "../src/classes/mercury";
 
 describe("Mercury", () => {
   let mercury;

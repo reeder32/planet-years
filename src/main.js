@@ -31,7 +31,18 @@ $("#submit-button").on("click", (event) => {
   if (personName && personAge && personGender) {
     let person = new Person(personName, personAge, personGender);
     person.planet = planet;
+    displayResult(person);
   } else {
     alert("You need to fill out all of the form, please...");
   }
 });
+
+function displayResult(person) {
+  $("#result").fadeIn();
+  $("#planet-name").text(person.planet.name);
+  $("#years").text(person.planet.convertToPlanetYears(person.age));
+  $("#expectancy").text(
+    person.planet.getLifeExpectencyForGender(person.gender)
+  );
+  $("#remaining-years").text(person.getRemainingLifeExpectency());
+}

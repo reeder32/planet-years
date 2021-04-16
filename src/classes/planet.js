@@ -16,7 +16,7 @@ export default class Planet {
   getRemainingYearsForGenderAndAge(gender, age) {
     if (gender === "male") {
       return (70 - age) * this.conversionNumber;
-    } else {
+    } else if (gender == "female") {
       return (75 - age) * this.conversionNumber;
     }
   }

@@ -1,6 +1,6 @@
-import Person from "../src/person.js";
-import Planet from "../src/planet";
-import Mars from "../src/mars";
+import Person from "../src/classes/person";
+import Planet from "../src/classes/planet";
+import Mars from "../src/classes/mars";
 describe("Person", () => {
   let person;
   beforeEach(() => {
