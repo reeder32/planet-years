@@ -3,7 +3,7 @@ import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/styles.css";
 import { Person, Mercury, Mars, Jupiter, Venus } from "./classes/index.js";
-
+import bg from "./assets/images/space.jpg";
 $("#submit-button").on("click", (e) => {
   e.stopImmediatePropagation();
   e.preventDefault();
@@ -41,10 +41,12 @@ $("#submit-button").on("click", (e) => {
 
 function displayResult(person) {
   $("#result").fadeIn();
+  $("#person-name").text(person.name);
   $("#planet-name").text(person.planet.name);
   $("#years").text(person.planet.convertToPlanetYears(person.age).toFixed(2));
   $("#expectancy").text(
     person.planet.getLifeExpectencyForGender(person.gender).toFixed(2)
   );
   $("#remaining-years").text(person.getRemainingLifeExpectency());
+  $("body").css("background-image", "url(" + bg + ")");
 }

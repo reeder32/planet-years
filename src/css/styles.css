@@ -22,6 +22,7 @@ button {
 
 #result {
   display: none;
+  margin: 8px;
 }
 
 span {
@@ -37,4 +38,9 @@ h3 {
 
 .container {
   margin-top: 8px;
+}
+
+#person-name {
+  font-weight: bolder;
+  color: darkslateblue;
 }
