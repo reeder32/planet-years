@@ -11,7 +11,6 @@ export default class Person {
       this.gender,
       this.age
     );
-    console.log(remainingYears);
     if (remainingYears >= 0) {
       return `You have ${remainingYears} years left on ${this.planet.name}`;
     } else {

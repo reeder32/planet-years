@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Planet Age</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="form" class="col-sm-10">
+        <div id="personal-info" class="select offset-sm-2 bg-info">
+          <h3 class="text-white">Your information:</h3>
+          <div class="form-group">
+            <label for="planet-selector" class="text-white">Name:</label>
+            <input type="text" id="name" placeholder="Your name"></input>
+          </div>
+          <div class="form-group">
+            <label for="planet-selector" class="text-white">Age:</label>
+            <input type="number" id="age" placeholder="Your age"></input>
+          </div>
+            <div class="form-group">
+              <label for="planet-selector" class="text-white">Gender:</label>
+              <select name="gender" id="gender-selector" class="custom-select" placeholder="Gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="decline">Decline to answer</option>
+              </select>
+            </div>
+        </div>
+         <div id="planet-info" class="select offset-sm-2 bg-light">
+          <div class="form-group">
+            
+            <label for="planet-selector" class="text-info">Choose Your Planet:</label>
+            <select name="planet" id="planet-selector" class="custom-select" placeholder="Planet">
+              <option value="Jupiter">Jupiter</option>
+              <option value="Mars">Mars</option>
+              <option value="Mercury">Mercury</option>
+              <option value="Venus">Venus</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary offset-sm-5">Get My Planet Age!</button>
+      </form>
+    </div>
+  <script type="text/javascript" src="bundle.js"></script></body>
+</html>
