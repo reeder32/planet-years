@@ -18,6 +18,8 @@ export default class Planet {
       return (70 - age) * this.conversionNumber;
     } else if (gender == "female") {
       return (75 - age) * this.conversionNumber;
+    } else {
+      return (72.5 - age) * this.conversionNumber;
     }
   }
 }
