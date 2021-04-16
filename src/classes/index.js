@@ -5,4 +5,4 @@ import Mercury from "./mercury";
 import Venus from "./venus";
 import Person from "./person";
 
-export default { Planet, Mars, Jupiter, Mercury, Venus, Person };
+export { Planet, Mars, Jupiter, Mercury, Venus, Person };

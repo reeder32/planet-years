@@ -12,10 +12,12 @@ export default class Person {
       this.age
     );
     if (remainingYears >= 0) {
-      return `You have ${remainingYears} years left on ${this.planet.name}`;
+      return `You have ${remainingYears.toFixed(2)} years left on ${
+        this.planet.name
+      }`;
     } else {
       return `You have exceeded the life expectency on ${this.planet.name} by ${
-        remainingYears * -1
+        remainingYears.toFixed(2) * -1
       } years`;
     }
   }
