@@ -6,7 +6,7 @@ describe("Person", () => {
     person = new Person("Nick", 40, "male");
   });
   test("should return a person with correct properties", () => {
-    let expectedPerson = new Person();
-    expectedPerson(person).to.equal(expectedPerson);
+    let expectedPerson = new Person("Nick", 40, "male");
+    expect(person).toEqual(expectedPerson);
   });
 });
