@@ -35,5 +35,6 @@
 
 #### iOS work
 
-_[Moody Weather](https://apps.apple.com/us/app/moody-weather/id1506337317)
-_[Find My Mailbox](https://apps.apple.com/us/app/find-my-mailbox/id1530700085)
+- [Moody Weather](https://apps.apple.com/us/app/moody-weather/id1506337317)
+
+- [Find My Mailbox](https://apps.apple.com/us/app/find-my-mailbox/id1530700085)
