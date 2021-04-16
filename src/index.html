@@ -12,11 +12,11 @@
         <div id="personal-info" class="select offset-sm-2 bg-info">
           <h3 class="text-white">Your information:</h3>
           <div class="form-group">
-            <label for="planet-selector" class="text-white">Name:</label>
+            <label for="name-selector" class="text-white">Name:</label>
             <input type="text" id="name" placeholder="Your name"></input>
           </div>
           <div class="form-group">
-            <label for="planet-selector" class="text-white">Age:</label>
+            <label for="age" class="text-white">Age:</label>
             <input type="number" id="age" placeholder="Your age"></input>
           </div>
             <div class="form-group">
@@ -33,15 +33,21 @@
             
             <label for="planet-selector" class="text-info">Choose Your Planet:</label>
             <select name="planet" id="planet-selector" class="custom-select" placeholder="Planet">
-              <option value="Jupiter">Jupiter</option>
-              <option value="Mars">Mars</option>
-              <option value="Mercury">Mercury</option>
-              <option value="Venus">Venus</option>
+              <option value="0">Jupiter</option>
+              <option value="1">Mars</option>
+              <option value="2">Mercury</option>
+              <option value="3">Venus</option>
             </select>
           </div>
         </div>
-        <button type="submit" class="btn btn-primary offset-sm-5">Get My Planet Age!</button>
+        <button id="submit-button" type="submit" class="btn btn-primary offset-sm-5">Get My Planet Age!</button>
       </form>
+      <div id="result">
+        <h2>On planet <span id="planet-name"></span></h2>
+        <h3>You'd be <span id="years"></span></h3>
+        <h3>Your life expectancy is <span id="expectancy"></span></h3>
+        <h3><span id="remaining-years"></span></h3>
+      </div>
     </div>
   <script type="text/javascript" src="bundle.js"></script></body>
 </html>
