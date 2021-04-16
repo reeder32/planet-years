@@ -4,5 +4,6 @@ export default class Mars extends Planet {
   constructor() {
     super();
     this.conversionNumber = 1.88;
+    this.name = "Mars";
   }
 }
