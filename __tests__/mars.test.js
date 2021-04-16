@@ -12,6 +12,6 @@ describe("Mars", () => {
     expect(mars.getLifeExpectencyForGender("male")).toEqual(131.6);
   });
   test("it should return the life expectency for Mars with conversion rate number and female", () => {
-    expect(mars.getLifeExpectencyForGender("female")).toEqual(131.6);
+    expect(mars.getLifeExpectencyForGender("female")).toEqual(141);
   });
 });
