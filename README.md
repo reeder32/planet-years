@@ -20,7 +20,9 @@
 1. Clone git repository [Click here](https://github.com/reeder32/planet-years.git)
 2. Navigate to root folder, run 'npm install'
 3. In terminal, run 'npm run build'
-4. Navigate to browser to see home page.
+4. In terminal, run 'npm run start' to start test server
+5. In terminal, run 'npm run test' to see tests
+6. Navigate to browser to see home page.
 
 ## License
 
