@@ -31,4 +31,12 @@ describe("Person", () => {
       "You have exceeded the life expectency on  by 10 years"
     );
   });
+  test("should get life expectency string with age when user exceeds expectency", () => {
+    let planet = new Planet();
+    person.age = 80.5;
+    person.planet = planet;
+    expect(person.getRemainingLifeExpectency()).toEqual(
+      "You have exceeded the life expectency on  by 10.5 years"
+    );
+  });
 });

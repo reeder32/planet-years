@@ -11,7 +11,6 @@ $("#submit-button").on("click", (e) => {
   const personAge = parseInt($("#age").val());
   const personGender = $("#gender-selector option:selected").val();
   const planetValue = parseInt($("#planet-selector option:selected").val());
-  console.log(planetValue);
   let planet;
   switch (planetValue) {
     case 0:
