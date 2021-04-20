@@ -30,9 +30,13 @@ $("#submit-button").on("click", (e) => {
   }
 
   if (personName && personAge && personGender) {
-    let person = new Person(personName, personAge, personGender);
-    person.planet = planet;
-    displayResult(person);
+    if (personAge <= 0) {
+      alert("You can't be less than 0 silly...");
+    } else {
+      let person = new Person(personName, personAge, personGender);
+      person.planet = planet;
+      displayResult(person);
+    }
   } else {
     alert("You need to fill out all of the form, please...");
   }
